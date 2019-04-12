@@ -38,8 +38,14 @@ const notationJournalEntry = {
 
 const entries = []
 
-// use the push() method to add the journalEntry object you defined above to the array
+// use the push() method to add the journalEntry objects you defined above to the array
 
-entries.push(objectsJournalEntry);
+function addEntry() {
+  entries.push(objectsJournalEntry);
+}
+
+function addEntry() {
+  entries.push(notationJournalEntry);
+}
 
 console.log(entries);
