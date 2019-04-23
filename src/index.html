@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,29 +8,30 @@
   <title>NSS Journal</title>
   <link rel="stylesheet" href="styles/journal.css">
 </head>
+
 <body>
-  
+
   <h1>NSS Journal</h1>
 
   <form>
 
     <fieldset>
       <label>date</label>
-      <input class="date" type="date" placeholder="date">
+      <input id="date" type="date" placeholder="date">
     </fieldset>
 
     <fieldset>
       <label for="concepts">concepts covered / entry title</label>
-      <input class="concepts" type="text" placeholder="concepts covered">
+      <input id="concepts" type="text" placeholder="concepts covered">
     </fieldset>
 
     <fieldset>
       <label>entry</label>
-      <textarea>TIL, TIF(eel), T(omorrow)IW(ill)</textarea>
+      <textarea id="entry">TIL, TIF(eel), T(omorrow)IW(ill)</textarea>
     </fieldset>
 
     <fieldset>
-      <select>
+      <select id="mood">
         <option>gettin it</option>
         <option>missin it</option>
       </select>
@@ -42,4 +44,5 @@
   <script src="scripts/journal.js"></script>
 
 </body>
+
 </html>
