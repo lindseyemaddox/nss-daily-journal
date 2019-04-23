@@ -16,8 +16,8 @@ console.log("hello, darlin'");
 // }
 
 myJournalEntry = {
-  title: "It'll Get Better",
   date: "April 23",
+  concepts: "It'll Get Better",
   entry: "Ugly cried a lot today.",
   mood: "tearful"
 }
@@ -35,4 +35,16 @@ function addJournalEntry(entryObject) {
   console.log("entries", entries);
 };
 
+
+var date = document.getElementById("date");
+
+function collectEntryItems() {
+  date.innerHTML = event.target.value;
+};
+
+
 addJournalEntry(myJournalEntry);
+
+document.getElementById("submit").addEventListener("click", function () {
+  collectEntryItems();
+});
