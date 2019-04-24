@@ -15,12 +15,7 @@ console.log("hello, darlin'");
 //   `
 // }
 
-myJournalEntry = {
-  date: "April 23",
-  concepts: "It'll Get Better",
-  entry: "Ugly cried a lot today.",
-  mood: "tearful"
-}
+
 
 
 // define an appropriately named variable that will have the value of an array
@@ -36,15 +31,20 @@ function addJournalEntry(entryObject) {
 };
 
 
-var date = document.getElementById("date");
+let submit = document.getElementById("submit");
+
 
 function collectEntryItems() {
-  date.innerHTML = event.target.value;
+  const myJournalEntry = {
+    date: document.getElementById("date").value,
+    concepts: document.getElementById("concepts").value,
+    entry: document.getElementById("entry").value,
+    mood: document.getElementById("mood").value
+  }
+  addJournalEntry(myJournalEntry);
 };
 
 
-addJournalEntry(myJournalEntry);
-
-document.getElementById("submit").addEventListener("click", function () {
+submit.addEventListener("click", function () {
   collectEntryItems();
 });
