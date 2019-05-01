@@ -9,5 +9,5 @@ let entryComponent = (journalEntry) => {
       <p>${journalEntry.entry}</p>
       <h3>Mood: ${journalEntry.mood}</h3>
     </div>
-  `
-}
+  `;
+};
