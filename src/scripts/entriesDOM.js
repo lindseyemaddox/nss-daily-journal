@@ -15,7 +15,6 @@ function addJournalEntry(entryObject) {
 let output = document.getElementById("output");
 
 let buildTheDom = () => {
-  // loop through entries
   output.innerHTML = "";
   for (var i = 0; i < entries.length; i++) {
     let journalEntry = entries[i];

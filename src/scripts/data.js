@@ -13,7 +13,6 @@ function collectEntryItems() {
   addJournalEntry(myJournalEntry);
 };
 
-
 submit.addEventListener("click", function () {
   collectEntryItems();
 });
